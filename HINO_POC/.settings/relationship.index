@@ -76,6 +76,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_Fo7fwE6REe2U8fi2aTpRpQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_sDwCEE6gEe2U8fi2aTpRpQ - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_T-diQE6OEe2U8fi2aTpRpQ",
     "version" : "0.1",
     "type" : "job"
