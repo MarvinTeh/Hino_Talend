@@ -19,6 +19,25 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_5dRikE6NEe2U8fi2aTpRpQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_IKoZwE6MEe2U8fi2aTpRpQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_PRiSYE6JEe2U8fi2aTpRpQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_PRiSYE6JEe2U8fi2aTpRpQ - SVMA01",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_i3zKgE6NEe2U8fi2aTpRpQ",
     "version" : "0.1",
     "type" : "job"
