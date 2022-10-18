@@ -1,1 +1,16 @@
-[ ]
+[ {
+  "baseItem" : {
+    "id" : "_1UoPAE6JEe2U8fi2aTpRpQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_PRiSYE6JEe2U8fi2aTpRpQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_PRiSYE6JEe2U8fi2aTpRpQ - SALES01",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+} ]
