@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:6/KZXsuxUABvhLvY/vjcUVxILMGTG+u4jf8arNlI"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:bBZz230ScAaPsqo+FS48zWn9HJC3f5jCQtrFz8yH"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:qOVOsNyNrwRn4b/nIRsUfLWgX7cJQQaFYikv19SX"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:WztMWLE2q1nW8i8cVU5338BPI6RvzVb4+JOA51ds"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -133,7 +133,7 @@
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="BASIC"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:gqp0DePSNXy5hKZFBx1S7F3tXHeY6PJo4ktJI1e2vG1a+j3LmLs="/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:IZqtueapje7cUaoyABdaVfy8ATbFRVplk+ApyYRMafeMJpwlGeE="/>
     <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
@@ -165,7 +165,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:+xRnpsiqvnfJoH8bBsyAL480tlF0jXHKdWd5MAe0"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:Hy0HHpHA71vfYjlDR4DkbkwSmg+mNhQZFefSBnsm"/>
     <elementParameter field="TEXT" name="ARRAY_KEYS" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRESTClient_1">
@@ -210,6 +210,205 @@
       <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
       <column defaultValue="" key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="out1">
+      <column comment="" key="false" length="-1" name="tbID" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DEALERCODX" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="LOCAT" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LOCATNM" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CUSCODX" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAMEX" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STRNOX" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VINNOX" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MODEL" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BODY_NAME" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="SALEVALX" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="SALEVATX" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="SALETOTX" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPOX" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPOVATX" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPOTOTX" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="REMVALX" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="REMVATX" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="REMTOTX" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INVOX" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INVDATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="id_Date" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SALETYPE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row2">
+        <nodes name="statusCode" type="id_Integer" xpath="row2/statusCode"/>
+        <nodes expression="" name="body" type="id_Document" xpath="row2/body">
+          <children loop="true" main="true" name="root" type="id_String" xpath="row2.body:/root">
+            <children name="root" type="id_String" xpath="row2.body:/root/root">
+              <children name="tbID" outgoingConnections="//@node.2/@nodeData/@connections.0" type="id_String" xpath="row2.body:/root/root/tbID"/>
+              <children name="DEALERCODX" outgoingConnections="//@node.2/@nodeData/@connections.1" type="id_String" xpath="row2.body:/root/root/DEALERCODX"/>
+              <children name="LOCAT" outgoingConnections="//@node.2/@nodeData/@connections.2" type="id_Float" xpath="row2.body:/root/root/LOCAT"/>
+              <children name="LOCATNM" outgoingConnections="//@node.2/@nodeData/@connections.3" type="id_String" xpath="row2.body:/root/root/LOCATNM"/>
+              <children name="CUSCODX" outgoingConnections="//@node.2/@nodeData/@connections.4" type="id_String" xpath="row2.body:/root/root/CUSCODX"/>
+              <children name="NAMEX" outgoingConnections="//@node.2/@nodeData/@connections.5" type="id_String" xpath="row2.body:/root/root/NAMEX"/>
+              <children name="STRNOX" outgoingConnections="//@node.2/@nodeData/@connections.6" type="id_String" xpath="row2.body:/root/root/STRNOX"/>
+              <children name="VINNOX" outgoingConnections="//@node.2/@nodeData/@connections.7" type="id_String" xpath="row2.body:/root/root/VINNOX"/>
+              <children name="MODEL" outgoingConnections="//@node.2/@nodeData/@connections.8" type="id_String" xpath="row2.body:/root/root/MODEL"/>
+              <children name="BODY_NAME" outgoingConnections="//@node.2/@nodeData/@connections.9" type="id_String" xpath="row2.body:/root/root/BODY_NAME"/>
+              <children name="SALEVALX" outgoingConnections="//@node.2/@nodeData/@connections.10" type="id_Float" xpath="row2.body:/root/root/SALEVALX"/>
+              <children name="SALEVATX" outgoingConnections="//@node.2/@nodeData/@connections.11" type="id_Float" xpath="row2.body:/root/root/SALEVATX"/>
+              <children name="SALETOTX" outgoingConnections="//@node.2/@nodeData/@connections.12" type="id_Float" xpath="row2.body:/root/root/SALETOTX"/>
+              <children name="DEPOX" outgoingConnections="//@node.2/@nodeData/@connections.13" type="id_Float" xpath="row2.body:/root/root/DEPOX"/>
+              <children name="DEPOVATX" outgoingConnections="//@node.2/@nodeData/@connections.14" type="id_Float" xpath="row2.body:/root/root/DEPOVATX"/>
+              <children name="DEPOTOTX" outgoingConnections="//@node.2/@nodeData/@connections.15" type="id_Float" xpath="row2.body:/root/root/DEPOTOTX"/>
+              <children name="REMVALX" outgoingConnections="//@node.2/@nodeData/@connections.16" type="id_Float" xpath="row2.body:/root/root/REMVALX"/>
+              <children name="REMVATX" outgoingConnections="//@node.2/@nodeData/@connections.17" type="id_Float" xpath="row2.body:/root/root/REMVATX"/>
+              <children name="REMTOTX" outgoingConnections="//@node.2/@nodeData/@connections.18" type="id_Float" xpath="row2.body:/root/root/REMTOTX"/>
+              <children name="INVOX" outgoingConnections="//@node.2/@nodeData/@connections.19" type="id_String" xpath="row2.body:/root/root/INVOX"/>
+              <children name="INVDATE" outgoingConnections="//@node.2/@nodeData/@connections.20" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="row2.body:/root/root/INVDATE"/>
+              <children name="SALETYPE" outgoingConnections="//@node.2/@nodeData/@connections.21" type="id_String" xpath="row2.body:/root/root/SALETYPE"/>
+            </children>
+          </children>
+        </nodes>
+        <nodes name="string" type="id_String" xpath="row2/string"/>
+      </inputTrees>
+      <outputTrees name="out1">
+        <nodes expression="[row2.body:/root/root/tbID]" incomingConnections="//@node.2/@nodeData/@connections.0" name="tbID" type="id_String" xpath="out1/tbID"/>
+        <nodes expression="[row2.body:/root/root/DEALERCODX]" incomingConnections="//@node.2/@nodeData/@connections.1" name="DEALERCODX" type="id_String" xpath="out1/DEALERCODX"/>
+        <nodes expression="[row2.body:/root/root/LOCAT]" incomingConnections="//@node.2/@nodeData/@connections.2" name="LOCAT" type="id_Float" xpath="out1/LOCAT"/>
+        <nodes expression="[row2.body:/root/root/LOCATNM]" incomingConnections="//@node.2/@nodeData/@connections.3" name="LOCATNM" type="id_String" xpath="out1/LOCATNM"/>
+        <nodes expression="[row2.body:/root/root/CUSCODX]" incomingConnections="//@node.2/@nodeData/@connections.4" name="CUSCODX" type="id_String" xpath="out1/CUSCODX"/>
+        <nodes expression="[row2.body:/root/root/NAMEX]" incomingConnections="//@node.2/@nodeData/@connections.5" name="NAMEX" type="id_String" xpath="out1/NAMEX"/>
+        <nodes expression="[row2.body:/root/root/STRNOX]" incomingConnections="//@node.2/@nodeData/@connections.6" name="STRNOX" type="id_String" xpath="out1/STRNOX"/>
+        <nodes expression="[row2.body:/root/root/VINNOX]" incomingConnections="//@node.2/@nodeData/@connections.7" name="VINNOX" type="id_String" xpath="out1/VINNOX"/>
+        <nodes expression="[row2.body:/root/root/MODEL]" incomingConnections="//@node.2/@nodeData/@connections.8" name="MODEL" type="id_String" xpath="out1/MODEL"/>
+        <nodes expression="[row2.body:/root/root/BODY_NAME]" incomingConnections="//@node.2/@nodeData/@connections.9" name="BODY_NAME" type="id_String" xpath="out1/BODY_NAME"/>
+        <nodes expression="[row2.body:/root/root/SALEVALX]" incomingConnections="//@node.2/@nodeData/@connections.10" name="SALEVALX" type="id_Float" xpath="out1/SALEVALX"/>
+        <nodes expression="[row2.body:/root/root/SALEVATX]" incomingConnections="//@node.2/@nodeData/@connections.11" name="SALEVATX" type="id_Float" xpath="out1/SALEVATX"/>
+        <nodes expression="[row2.body:/root/root/SALETOTX]" incomingConnections="//@node.2/@nodeData/@connections.12" name="SALETOTX" type="id_Float" xpath="out1/SALETOTX"/>
+        <nodes expression="[row2.body:/root/root/DEPOX]" incomingConnections="//@node.2/@nodeData/@connections.13" name="DEPOX" type="id_Float" xpath="out1/DEPOX"/>
+        <nodes expression="[row2.body:/root/root/DEPOVATX]" incomingConnections="//@node.2/@nodeData/@connections.14" name="DEPOVATX" type="id_Float" xpath="out1/DEPOVATX"/>
+        <nodes expression="[row2.body:/root/root/DEPOTOTX]" incomingConnections="//@node.2/@nodeData/@connections.15" name="DEPOTOTX" type="id_Float" xpath="out1/DEPOTOTX"/>
+        <nodes expression="[row2.body:/root/root/REMVALX]" incomingConnections="//@node.2/@nodeData/@connections.16" name="REMVALX" type="id_Float" xpath="out1/REMVALX"/>
+        <nodes expression="[row2.body:/root/root/REMVATX]" incomingConnections="//@node.2/@nodeData/@connections.17" name="REMVATX" type="id_Float" xpath="out1/REMVATX"/>
+        <nodes expression="[row2.body:/root/root/REMTOTX]" incomingConnections="//@node.2/@nodeData/@connections.18" name="REMTOTX" type="id_Float" xpath="out1/REMTOTX"/>
+        <nodes expression="[row2.body:/root/root/INVOX]" incomingConnections="//@node.2/@nodeData/@connections.19" name="INVOX" type="id_String" xpath="out1/INVOX"/>
+        <nodes expression="[row2.body:/root/root/INVDATE]" incomingConnections="//@node.2/@nodeData/@connections.20" name="INVDATE" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="out1/INVDATE"/>
+        <nodes expression="[row2.body:/root/root/SALETYPE]" incomingConnections="//@node.2/@nodeData/@connections.21" name="SALETYPE" type="id_String" xpath="out1/SALETYPE"/>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.2" target="//@node.2/@nodeData/@outputTrees.0/@nodes.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.4" target="//@node.2/@nodeData/@outputTrees.0/@nodes.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.5" target="//@node.2/@nodeData/@outputTrees.0/@nodes.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.6" target="//@node.2/@nodeData/@outputTrees.0/@nodes.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.7" target="//@node.2/@nodeData/@outputTrees.0/@nodes.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.8" target="//@node.2/@nodeData/@outputTrees.0/@nodes.8" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.9" target="//@node.2/@nodeData/@outputTrees.0/@nodes.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.10" target="//@node.2/@nodeData/@outputTrees.0/@nodes.10" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.11" target="//@node.2/@nodeData/@outputTrees.0/@nodes.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.12" target="//@node.2/@nodeData/@outputTrees.0/@nodes.12" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.13" target="//@node.2/@nodeData/@outputTrees.0/@nodes.13" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.14" target="//@node.2/@nodeData/@outputTrees.0/@nodes.14" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.15" target="//@node.2/@nodeData/@outputTrees.0/@nodes.15" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.16" target="//@node.2/@nodeData/@outputTrees.0/@nodes.16" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.17" target="//@node.2/@nodeData/@outputTrees.0/@nodes.17" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.18" target="//@node.2/@nodeData/@outputTrees.0/@nodes.18" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.19" target="//@node.2/@nodeData/@outputTrees.0/@nodes.19" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.20" target="//@node.2/@nodeData/@outputTrees.0/@nodes.20" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.2/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.21" target="//@node.2/@nodeData/@outputTrees.0/@nodes.21" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_3"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="tbID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEALERCODX"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOCAT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOCATNM"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSCODX"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAMEX"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STRNOX"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VINNOX"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODEL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BODY_NAME"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SALEVALX"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SALEVATX"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SALETOTX"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEPOX"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEPOVATX"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEPOTOTX"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REMVALX"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REMVATX"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REMTOTX"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVOX"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVDATE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SALETYPE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="tLogRow_3">
+      <column comment="" key="false" length="-1" name="tbID" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DEALERCODX" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="LOCAT" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LOCATNM" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CUSCODX" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NAMEX" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STRNOX" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VINNOX" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MODEL" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BODY_NAME" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="SALEVALX" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="SALEVATX" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="SALETOTX" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPOX" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPOVATX" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DEPOTOTX" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="REMVALX" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="REMVATX" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="REMTOTX" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INVOX" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INVDATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="id_Date" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SALETYPE" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="352">
@@ -505,18 +704,17 @@
       <column comment="" key="false" length="10" name="SALETYPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
-    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <nodeData xsi:type="TalendXMLMap:XmlMapData"/>
-  </node>
   <connection connectorName="RESPONSE" label="row1" lineStyle="0" metaname="RESPONSE" offsetLabelX="0" offsetLabelY="0" source="tRESTClient_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tLogRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tExtractJSONFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_1" target="tLogRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -533,18 +731,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6b91b1c1-db7b-4099-a183-21ba48902a20"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ub0YSJuBxHwcCk1S12Tk8h16VHid6Slx4KIG7ds/u0WZZd/vuhPj1UwYunfhsdSbYQMej0vPHYlb&#13;
-guBbfwJvcg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_dfe4a993-d73b-48e6-8e03-f06a3508565f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KDMtbIeDfGGxbIrdOvxtu4y4Hc2/BTaPPTjeYj3Y3VfUiPNwUt26UDUNbxuaUC0v9wU4jrEqNJvf&#13;
-OKskchNgCg==</DigestValue></Reference></SignedInfo><SignatureValue>dn67zh7EB1VFVzrvnx8pyhHhAg12gangI4NwxLqCUWbQG+MugDPM7SEEeFWYBQq2pbvaFt9umo15&#13;
-9GQqwItkZya4wjprNg2N6oWevZXym7y0OteMAS+uuz5bBx40YJGD/nbXa+3d/pTGPDADEA8b2/W9&#13;
-1qG1Vxg5JLkILbCyvgYSSndqpAiOp+5oF5xp4fKA+6hqEyWNYmrPj4/kfnpXLoxdQQacJ73jbp3p&#13;
-Fzm5KOoSZRErNMKgzKidwLAODK63CGRx/XUOEJ38GtCJ3wTr1A7EQW92n306dWSnAw+ABU3uQ6w1&#13;
-Ym5fRIy5RnHcu2Tu02D2oNR98MmhJKlIRj4U3w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c69612d6-41ac-410c-b3a0-a0baa452d478"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MhTC7My9lANW0kMs4M9/jBwPvzn9tG9RgMYEa6TMrhFaAdBA3riXjhlRGp17BmyNQ0wckdzb+HQK&#13;
+UNn9vX6/QQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_236394b5-32c4-4d42-a3a1-c22f39880abd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jAj75Ma5Y19VxX+CCEgshilzF8BPIWgZt5KCQPoId6BEyT67O4gY1bMMWPjQrOnlFFZj1k+7iHhW&#13;
+0kPd6eKgNQ==</DigestValue></Reference></SignedInfo><SignatureValue>O6IM+DNMkw4GMrx4AKC1ZPVB5tshWfCziXggjZ1+1jcH7UrGb6p6WX8aTHwm7vaurPP3HIcyiDtV&#13;
+NXeYpwco5qUnuXZS61F/MyiJa2hhQ4KS50ejgFvKyTXYdIpIfI8KxIIscM+8jlxLM+9wOq4ymh33&#13;
+1WrrddGNx7SLv/yVHkL6syofQ3esJry2olP7pK4ffZv0J91bdgWvg5dKeDbz7H0IAA1pjGspYDBn&#13;
+mOBR8Y1QDG5orimC8s40ifpydbOi5KvCwv0mA4jsysSoUYMkMXWzJedKKp0GocXs5cL5KeUknAVQ&#13;
+SaO3eKIvu6n5n4Vrl3oKgLplAVqc2CANQ5rGrA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -566,4 +759,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_dfe4a993-d73b-48e6-8e03-f06a3508565f" Target="#_6b91b1c1-db7b-4099-a183-21ba48902a20"><Timestamp>2022-10-18 04:31:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_236394b5-32c4-4d42-a3a1-c22f39880abd" Target="#_c69612d6-41ac-410c-b3a0-a0baa452d478"><Timestamp>2022-10-18 04:33:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
