@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendJSON:JSONFileConnection Encoding="UTF-8" JSONFilePath="D:/Desktop/Events&amp;Training/Hino/SalesData.json" dataPackage="_Qm_yGU6gEe2U8fi2aTpRpQ" inputModel="false" name="SalesData" xmi:id="_Qm_yAE6gEe2U8fi2aTpRpQ">
+    <root Attribute="main" JSONPath="/root" Order="1" RelatedColumn="" Type="id_String" xmi:id="_Qm_yAU6gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="main" JSONPath="/root/object" Order="2" RelatedColumn="" Type="id_String" xmi:id="_Qm_yAk6gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/tbID" Order="3" RelatedColumn="tbID" Type="id_String" xmi:id="_Qm_yA06gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/DEALERCODX" Order="4" RelatedColumn="DEALERCODX" Type="id_String" xmi:id="_Qm_yBE6gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/LOCAT" Order="5" RelatedColumn="LOCAT" Type="id_Float" xmi:id="_Qm_yBU6gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/LOCATNM" Order="6" RelatedColumn="LOCATNM" Type="id_String" xmi:id="_Qm_yBk6gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/CUSCODX" Order="7" RelatedColumn="CUSCODX" Type="id_String" xmi:id="_Qm_yB06gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/NAMEX" Order="8" RelatedColumn="NAMEX" Type="id_String" xmi:id="_Qm_yCE6gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/STRNOX" Order="9" RelatedColumn="STRNOX" Type="id_String" xmi:id="_Qm_yCU6gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/VINNOX" Order="10" RelatedColumn="VINNOX" Type="id_String" xmi:id="_Qm_yCk6gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/MODEL" Order="11" RelatedColumn="MODEL" Type="id_String" xmi:id="_Qm_yC06gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/BODY_NAME" Order="12" RelatedColumn="BODY_NAME" Type="id_String" xmi:id="_Qm_yDE6gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/SALEVALX" Order="13" RelatedColumn="SALEVALX" Type="id_Float" xmi:id="_Qm_yDU6gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/SALEVATX" Order="14" RelatedColumn="SALEVATX" Type="id_Float" xmi:id="_Qm_yDk6gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/SALETOTX" Order="15" RelatedColumn="SALETOTX" Type="id_Float" xmi:id="_Qm_yD06gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/DEPOX" Order="16" RelatedColumn="DEPOX" Type="id_Float" xmi:id="_Qm_yEE6gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/DEPOVATX" Order="17" RelatedColumn="DEPOVATX" Type="id_Float" xmi:id="_Qm_yEU6gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/DEPOTOTX" Order="18" RelatedColumn="DEPOTOTX" Type="id_Float" xmi:id="_Qm_yEk6gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/REMVALX" Order="19" RelatedColumn="REMVALX" Type="id_Float" xmi:id="_Qm_yE06gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/REMVATX" Order="20" RelatedColumn="REMVATX" Type="id_Float" xmi:id="_Qm_yFE6gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/REMTOTX" Order="21" RelatedColumn="REMTOTX" Type="id_Float" xmi:id="_Qm_yFU6gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/INVOX" Order="22" RelatedColumn="INVOX" Type="id_String" xmi:id="_Qm_yFk6gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/INVDATE" Order="23" RelatedColumn="INVDATE" Type="id_Date" xmi:id="_Qm_yF06gEe2U8fi2aTpRpQ"/>
+    <loop Attribute="branch" JSONPath="/root/object/SALETYPE" Order="24" RelatedColumn="SALETYPE" Type="id_String" xmi:id="_Qm_yGE6gEe2U8fi2aTpRpQ"/>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile dataManager="_Qm_yAE6gEe2U8fi2aTpRpQ" name="default" xmi:id="_Qm_yGU6gEe2U8fi2aTpRpQ">
+    <ownedElement id="_2UMzoE6fEe2U8fi2aTpRpQ" label="metadata" xmi:id="_Qm_yGk6gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="tbID" length="100" name="tbID" talendType="id_String" xmi:id="_Qm_yG06gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="DEALERCODX" length="100" name="DEALERCODX" talendType="id_String" xmi:id="_Qm_yHE6gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="LOCAT" length="100" name="LOCAT" talendType="id_Float" xmi:id="_Qm_yHU6gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="LOCATNM" length="100" name="LOCATNM" talendType="id_String" xmi:id="_Qm_yHk6gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="CUSCODX" length="100" name="CUSCODX" talendType="id_String" xmi:id="_Qm_yH06gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="NAMEX" length="100" name="NAMEX" talendType="id_String" xmi:id="_Qm_yIE6gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="STRNOX" length="100" name="STRNOX" talendType="id_String" xmi:id="_Qm_yIU6gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="VINNOX" length="100" name="VINNOX" talendType="id_String" xmi:id="_Qm_yIk6gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="MODEL" length="100" name="MODEL" talendType="id_String" xmi:id="_Qm_yI06gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="BODY_NAME" length="100" name="BODY_NAME" talendType="id_String" xmi:id="_Qm_yJE6gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="SALEVALX" length="100" name="SALEVALX" talendType="id_Float" xmi:id="_Qm_yJU6gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="SALEVATX" length="100" name="SALEVATX" talendType="id_Float" xmi:id="_Qm_yJk6gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="SALETOTX" length="100" name="SALETOTX" talendType="id_Float" xmi:id="_Qm_yJ06gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="DEPOX" length="100" name="DEPOX" talendType="id_Float" xmi:id="_Qm_yKE6gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="DEPOVATX" length="100" name="DEPOVATX" talendType="id_Float" xmi:id="_Qm_yKU6gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="DEPOTOTX" length="100" name="DEPOTOTX" talendType="id_Float" xmi:id="_QnAZEE6gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="REMVALX" length="100" name="REMVALX" talendType="id_Float" xmi:id="_QnAZEU6gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="REMVATX" length="100" name="REMVATX" talendType="id_Float" xmi:id="_QnAZEk6gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="REMTOTX" length="100" name="REMTOTX" talendType="id_Float" xmi:id="_QnAZE06gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="INVOX" length="100" name="INVOX" talendType="id_String" xmi:id="_QnAZFE6gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="INVDATE" length="100" name="INVDATE" talendType="id_Date" xmi:id="_QnAZFU6gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="SALETYPE" length="100" name="SALETYPE" talendType="id_String" xmi:id="_QnAZFk6gEe2U8fi2aTpRpQ" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7bd35d41-39f4-4008-94d1-9665a01912a1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fp/c56+hQef5eZp/qUsf1331Atz/CjBcYsH/WDgceJrWvknGXs01Zz7eiWcjRjPcQBdd2KqgiLtY&#13;
+zxhJG3+vHw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a74fe59f-2120-405d-a112-f8dcabbcca7d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mMRQLEChzoQ5tYdiX+yPhMFkfRZlbPty5sXTMW1OO3uz+K46BMYTTlvIgfnfPYoT8C0QEs0c8tk7&#13;
+7g8y4JHUfA==</DigestValue></Reference></SignedInfo><SignatureValue>jcFO28vWp+Neoi+L3fCCP8YtvUBfYRL2hFfbIk1FsCuXWIpnqgcZP03RG/w1q0qh6DD/FMub24zX&#13;
+RcVTjmL4GTDSNB1Ty+3u7vU4JmjjWEDUIyJWwSISv1Xve33Scvk/rDE3vVL+aXrUWcU4Ah9Vc3pu&#13;
+eE06XAgQPX3onzijjxpaO9EaIJXkIuR1mpu42PnhIX8NR40SDfoKtVOtFfrZYhovoFfZR96BI63w&#13;
+BN8a3OaCKMcXZsB8kg+0Qcu34H35Jyc9aQAYCJIoZMRuZCMcmEbATgSDeoKGo6h2py1mVsfxCtP1&#13;
+UTr0jojI/ugO6HO0Kxcl8bTgcLmfAHSMqP1cNg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a74fe59f-2120-405d-a112-f8dcabbcca7d" Target="#_7bd35d41-39f4-4008-94d1-9665a01912a1"><Timestamp>2022-10-18 04:19:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
