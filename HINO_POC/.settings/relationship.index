@@ -38,6 +38,25 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_T-diQE6OEe2U8fi2aTpRpQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_IKoZwE6MEe2U8fi2aTpRpQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_PRiSYE6JEe2U8fi2aTpRpQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_PRiSYE6JEe2U8fi2aTpRpQ - VEHIC01",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_i3zKgE6NEe2U8fi2aTpRpQ",
     "version" : "0.1",
     "type" : "job"
