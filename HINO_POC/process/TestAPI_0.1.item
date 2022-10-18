@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:p3MvAiMYuK1SHJhOUtkm2Y07ZnmxYrXyMSXC2JP7"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:OyniGp5OXIaLQe/YVqFlnXifZQ3ZPnK7lCUTuMXM"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:uTjjYjs/WBRbaOf/Pkm3DTlGLW/mmS6S7RIA00TZ"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:WeLH4w+Tk+lePlJhEK/GlKrgCZTmlxi9KIGZaWjd"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -133,7 +133,7 @@
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="BASIC"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:NLTAV4tqIGT8HreYCcCsHAbLGrbACEHRt16oJylp/z2n0yzNPYk="/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:ZssxsHApnon+yVHo4Fwk+hWBvKPL1GGt08NpWyysNh2UfiK9kC4="/>
     <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
@@ -163,7 +163,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:H8gyydb9lq2gu6uRkWVqwrSz2Z9YUTdnhPB6sZLh"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:E5zHohSa8k96phdB68huA5aDLk/o0x0XPE6FXq0r"/>
     <elementParameter field="TEXT" name="ARRAY_KEYS" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRESTClient_1">
@@ -218,7 +218,7 @@
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
     <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="body"/>
     <elementParameter field="TEXT" name="LOOP_QUERY" show="false" value="&quot;/bills/bill/line&quot;"/>
-    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$[*]&quot;"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$&quot;"/>
     <elementParameter field="TABLE" name="MAPPING" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="tbID"/>
       <elementValue elementRef="QUERY" value=""/>
@@ -311,49 +311,49 @@
     </elementParameter>
     <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
       <elementValue elementRef="SCHEMA_COLUMN" value="tbID"/>
-      <elementValue elementRef="QUERY" value="&quot;tbID&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.tbID&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="DEALERCODX"/>
-      <elementValue elementRef="QUERY" value="&quot;DEALERCODX&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.DEALERCODX&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="LOCAT"/>
-      <elementValue elementRef="QUERY" value="&quot;LOCAT&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.LOCAT&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="LOCATNM"/>
-      <elementValue elementRef="QUERY" value="&quot;LOCATNM&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.LOCATNM&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CUSCODX"/>
-      <elementValue elementRef="QUERY" value="&quot;CUSCODX&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.CUSCODX&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="NAMEX"/>
-      <elementValue elementRef="QUERY" value="&quot;NAMEX&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.NAMEX&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="STRNOX"/>
-      <elementValue elementRef="QUERY" value="&quot;STRNOX&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.STRNOX&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="VINNOX"/>
-      <elementValue elementRef="QUERY" value="&quot;VINNOX&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.VINNOX&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="MODEL"/>
-      <elementValue elementRef="QUERY" value="&quot;MODEL&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.MODEL&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="BODY_NAME"/>
-      <elementValue elementRef="QUERY" value="&quot;BODY_NAME&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.BODY_NAME&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="SALEVALX"/>
-      <elementValue elementRef="QUERY" value="&quot;SALEVALX&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.SALEVALX&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="SALEVATX"/>
-      <elementValue elementRef="QUERY" value="&quot;SALEVATX&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.SALEVATX&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="SALETOTX"/>
-      <elementValue elementRef="QUERY" value="&quot;SALETOTX&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.SALETOTX&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="DEPOX"/>
-      <elementValue elementRef="QUERY" value="&quot;DEPOX&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.DEPOX&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="DEPOVATX"/>
-      <elementValue elementRef="QUERY" value="&quot;DEPOVATX&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.DEPOVATX&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="DEPOTOTX"/>
-      <elementValue elementRef="QUERY" value="&quot;DEPOTOTX&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.DEPOTOTX&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="REMVALX"/>
-      <elementValue elementRef="QUERY" value="&quot;REMVALX&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.REMVALX&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="REMVATX"/>
-      <elementValue elementRef="QUERY" value="&quot;REMVATX&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.REMVATX&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="REMTOTX"/>
-      <elementValue elementRef="QUERY" value="&quot;REMTOTX&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.REMTOTX&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="INVOX"/>
-      <elementValue elementRef="QUERY" value="&quot;INVOX&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.INVOX&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="INVDATE"/>
-      <elementValue elementRef="QUERY" value="&quot;INVDATE&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.INVDATE&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="SALETYPE"/>
-      <elementValue elementRef="QUERY" value="&quot;SALETYPE&quot;"/>
+      <elementValue elementRef="QUERY" value="&quot;$.SALETYPE&quot;"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
@@ -518,13 +518,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_71099cdd-037e-4b64-a343-f10a36f79f05"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EdL3NFfUL1/8V0QoH/uutFTPr/fWLr7eTW11LMZK7ly0z3JJ5SVFL7EaprKwnCtWr8qr1Nc5PzJN&#13;
-5nhns9ESKw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e3ea091b-2670-48de-a7bd-d297a724717d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZnkmrLwMtV75LFY1zn7qopOtrJGNJrA188K3QGV6lN8X2JjcPYp6h6d8EPAdxqL5QlY/T1brKOGu&#13;
-xHbjUe2cUA==</DigestValue></Reference></SignedInfo><SignatureValue>JBdmu0O77hQ8/8rzJrDBP/ytcLYsXGc8ZxWbCPvuYFLZrriyduS0iEvkAVkWywX+9lAe8dNn72sf&#13;
-mpAdFfnxMdKDNIYdchOJeCI9Nz3FKQ8NpSINNbXWpqsCEBA7J7xU/71oaYiRm7n8lI9vTg1aDYOo&#13;
-ETzmM2lVJBsOU+8KtRrlSTJARy+hOX6ggpSPV3xVCy9QKHQkeb3gCFIGnk/fpS8/pSL3p4FWvbEz&#13;
-1nq3l5zU9Ikui0sUhu4s060jPJZDB/xtnnwg61K6p1acVz8TqhoaudlxEqt/KvnOkzUud53y7rD5&#13;
-9Tq/T/RLl0Xp3mjDAwVNLHJ4/MWTydfVaWprdg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_50b509df-48ba-430b-9d3a-336b6a353236"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gBRPe1tnIGYJtmd1WFYnAL8tJzG8oyLxB6+JyVt/rplf+wL6HgwXXn3nY5txNuVknZ6J4ivoozVK&#13;
+8d5sz9DIZg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_551f5768-614d-4d4f-9cee-110e3510617b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>I8dFDaya8Sv4DD+KZaQdKGPCjXAYxgbAF/Q/2OvStD2ZNAyz2yatRMTO7k8Co6TlXJKhy9DPW71G&#13;
+neqVlw8ukQ==</DigestValue></Reference></SignedInfo><SignatureValue>aIf+eH/MuzmB2dH9cJvFBR2V6wps3ZLHuFKskigG8qblGfpNLhFxOgYWFCY6WytyL5+hQlpSJwxd&#13;
+wSf49+7crIezuTanSqNWvIWefHsHMYeVSS/1r4GcTQqXPB3xt5Ct2NbTOUvp45qbLXvnC4aR5A+/&#13;
+mhxQmbQc033A9IxymNdRBzbkiVtO+oBXL/chZxka3x3cjmzZFsrrAeu26suNyvJoxE93aNv0BTQQ&#13;
+PwWoU4WIH+4ZNAVvu1jq2/Sak6Tm2K4SceEwJjVNqK+sjV47Gw/1eTje5tte8CXvoGM0apyFiLRR&#13;
+PMYPxV3hk2pd/p/G6dspApwODPmtDp2GyTiP8g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -546,4 +546,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e3ea091b-2670-48de-a7bd-d297a724717d" Target="#_71099cdd-037e-4b64-a343-f10a36f79f05"><Timestamp>2022-10-18 04:26:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_551f5768-614d-4d4f-9cee-110e3510617b" Target="#_50b509df-48ba-430b-9d3a-336b6a353236"><Timestamp>2022-10-18 04:27:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
