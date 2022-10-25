@@ -81,11 +81,11 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_EErpUE6SEe2U8fi2aTpRpQ",
+    "id" : "_IKoZwE6MEe2U8fi2aTpRpQ",
     "version" : "Latest",
     "type" : "property"
   }, {
-    "id" : "_EErpUE6SEe2U8fi2aTpRpQ - SALES01",
+    "id" : "_IKoZwE6MEe2U8fi2aTpRpQ - sales_history",
     "version" : "Latest",
     "type" : "schema"
   } ]
