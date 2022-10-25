@@ -182,6 +182,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_u6ctsFQXEe2VtKHPsJnsEw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_IKoZwE6MEe2U8fi2aTpRpQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_IKoZwE6MEe2U8fi2aTpRpQ - sales_history",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_wk0pQE6PEe2U8fi2aTpRpQ",
     "version" : "0.1",
     "type" : "job"
