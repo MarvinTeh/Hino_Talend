@@ -2,8 +2,6 @@
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
-    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms1500M&quot;,&quot;-Xmx5500M&quot;]}"/>
-    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" show="false" value="true"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
@@ -45,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:JVvz5JRkxo7+1+aLhvhlNtZvtqvVQUou7uFz0fFY"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:qzM148xnt8vqLdK0c8wi5WAkHcWQEtn8tqq6h3cB"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -80,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:/8HRCQtah+vHRVXFhkYWjtZ+dqEDoChOs8MlBe/q"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:5VCZ445YvlNYZjlRnE2XDQVwIpWEzqg6D7zSVFp3"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -115,84 +113,109 @@
     <routinesParameter id="_GZJecE1iEe2-wa751-W5ZQ" name="TalendStringUtil"/>
     <routinesParameter id="_GZCwwE1iEe2-wa751-W5ZQ" name="TalendString"/>
   </parameters>
-  <node componentName="tAS400Input" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="128">
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_IKoZwE6MEe2U8fi2aTpRpQ"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_PRiSYE6JEe2U8fi2aTpRpQ"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="jt400_V6R1.jar"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;156.71.3.109&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;MDMPOC&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="AS400"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;TALEND&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4dHmzI/csszYqmYuUBoxMLK5d6mbDzmg2gEB6NPQFrkgAqQoPV6Dmg=="/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_PRiSYE6JEe2U8fi2aTpRpQ - MODEL01"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;MODEL01&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;Hino&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:T/vlZ79m5xbKSaeBF79AhVUAK+EM0Nhmb6PVh9FtD+LgLMvXGg=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;vehicle_master&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  MODEL01.MODLIP, &#10;  MODEL01.MDLYIP, &#10;  MODEL01.DESCIP, &#10;  MODEL01.CAT1IP, &#10;  MODEL01.CAT2IP, &#10;  MODEL01.CAT3IP, &#10;  MODEL01.CAT4IP, &#10;  MODEL01.CAT5IP&#10;FROM MODEL01&quot;"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="as400_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;prompt=false&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select us.vinnox, us.namexx, vm.*&#13;&#10;from &#13;&#10;&#9;`hino`.`vehicle_master` vm, &#13;&#10;    ((select VINNOX,NAMEXX from `hino`.`sales_history`)union all(select VINNOX, NAMEX from `hino`.`service_history`)) us&#13;&#10;Where vm.`VIN#I7`=us.VINNOX;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="MODLIP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vinnox"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MDLYIP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="namexx"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DESCIP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VIN_I7"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT1IP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OMDLI7"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT2IP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SER_I7"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT3IP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODLI7"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT4IP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MDLYI7"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT5IP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MDYSI7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ENG_2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COLRI7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="XPRFI7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WRYYI7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WRMMI7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WRDDI7"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
-    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
-    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
-    <elementParameter field="TEXT" name="LABEL" value="AS400_Hino"/>
+    <elementParameter field="TEXT" name="LABEL" value="Complex Query"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="MODEL01" name="tDBInput_1">
-      <column comment="" defaultValue="' '" key="false" length="20" name="MODLIP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+    <metadata connector="FLOW" label="vehicle_master" name="tDBInput_1">
+      <column comment="" key="false" length="200" name="vinnox" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="namexx" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="VIN_I7" nullable="false" originalDbColumnName="VIN#I7" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="0" key="false" length="4" name="MDLYIP" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="100" name="OMDLI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="30" name="DESCIP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="SER_I7" nullable="false" originalDbColumnName="SER#I7" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT1IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="MODLI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT2IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" defaultValue="0" key="false" length="100" name="MDLYI7" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT3IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="MDYSI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT4IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="ENG_2" nullable="false" originalDbColumnName="ENG#2" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT5IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="COLRI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <additionalProperties key="SYSTEM_TABLE_NAME" value="MODEL01"/>
-      <additionalProperties key="TABLE_SCHEMA" value="MDMPOC"/>
-      <additionalProperties key="SYSTEM_TABLE_SCHEMA" value="MDMPOC"/>
+      <column comment="" key="false" length="100" name="XPRFI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="100" name="WRYYI7" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="100" name="WRMMI7" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="100" name="WRDDI7" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="128">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -206,150 +229,94 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="MODLIP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vinnox"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MDLYIP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="namexx"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DESCIP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VIN_I7"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT1IP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OMDLI7"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT2IP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SER_I7"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT3IP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODLI7"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT4IP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MDLYI7"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT5IP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MDYSI7"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ENG_2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COLRI7"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="XPRFI7"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WRYYI7"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WRMMI7"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WRDDI7"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="MODEL01" name="tLogRow_1">
-      <column comment="" defaultValue="' '" key="false" length="20" name="MODLIP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+    <metadata connector="FLOW" label="vehicle_master" name="tLogRow_1">
+      <column comment="" key="false" length="200" name="vinnox" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="namexx" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="VIN_I7" nullable="false" originalDbColumnName="VIN#I7" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="0" key="false" length="4" name="MDLYIP" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="100" name="OMDLI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="30" name="DESCIP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="SER_I7" nullable="false" originalDbColumnName="SER#I7" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT1IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="MODLI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT2IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" defaultValue="0" key="false" length="100" name="MDLYI7" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT3IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="MDYSI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT4IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="ENG_2" nullable="false" originalDbColumnName="ENG#2" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT5IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="COLRI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <additionalProperties key="SYSTEM_TABLE_NAME" value="MODEL01"/>
-      <additionalProperties key="TABLE_SCHEMA" value="MDMPOC"/>
-      <additionalProperties key="SYSTEM_TABLE_SCHEMA" value="MDMPOC"/>
+      <column comment="" key="false" length="100" name="XPRFI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="100" name="WRYYI7" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="100" name="WRMMI7" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="100" name="WRDDI7" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputExcel_1"/>
-    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
-    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/Desktop/Events&amp;Training/Hino/Scenario1/Scenario1_Data/Model_Master.xlsx&quot;"/>
-    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
-    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
-    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
-    <elementParameter field="CHECK" name="APPEND_SHEET" show="false" value="false"/>
-    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
-    <elementParameter field="TEXT" name="FIRST_CELL_X" show="false" value="0"/>
-    <elementParameter field="TEXT" name="FIRST_CELL_Y" show="false" value="0"/>
-    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" show="false" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
-    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
-    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
-      <elementValue elementRef="SCHEMA_COLUMN" value="MODLIP"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MDLYIP"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DESCIP"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT1IP"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT2IP"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT3IP"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT4IP"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT5IP"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PROTECT_FILE" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:XOYUSJ9a4WUQEgU9qmDzKGWr3H29Vm4XL9rY3PWU"/>
-    <elementParameter field="CHECK" name="CREATE" value="true"/>
-    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
-    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
-    <elementParameter field="CHECK" name="TRUNCATE_EXCEEDING_CHARACTERS" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
-    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" show="false" value="false"/>
-    <elementParameter field="CHECK" name="STREAMING_APPEND" show="false" value="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="MODEL01" name="tFileOutputExcel_1">
-      <column comment="" defaultValue="' '" key="false" length="20" name="MODLIP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="0" key="false" length="4" name="MDLYIP" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="' '" key="false" length="30" name="DESCIP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT1IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT2IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT3IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT4IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT5IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="SYSTEM_TABLE_NAME" value="MODEL01"/>
-      <additionalProperties key="TABLE_SCHEMA" value="MDMPOC"/>
-      <additionalProperties key="SYSTEM_TABLE_SCHEMA" value="MDMPOC"/>
-    </metadata>
-  </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="128">
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_IKoZwE6MEe2U8fi2aTpRpQ"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_H7ngMFsrEe2Z9t7qlHAuxg"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;Hino&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;hino_destination&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:McFlNM25uScWJmVOr9YH45pT1qmm+WA8DpDtIWLxQmkj+riPsQ=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Model_Master&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ns04vk9v3tLnnircCcLK2ha1GZi5/hR18uCEDKta+7/XcvDCEg=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;JoinData_ComplexQuery&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
@@ -369,42 +336,72 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="MODLIP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vinnox"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MDLYIP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="namexx"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DESCIP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VIN_I7"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT1IP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OMDLI7"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT2IP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SER_I7"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT3IP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODLI7"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT4IP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MDLYI7"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAT5IP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MDYSI7"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ENG_2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COLRI7"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="XPRFI7"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WRYYI7"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WRMMI7"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WRDDI7"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -416,93 +413,121 @@
     <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
     <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="Quandatics_DB"/>
+    <elementParameter field="TEXT" name="LABEL" value="ComplexQueryResult"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="MODEL01" name="tDBOutput_1">
-      <column comment="" defaultValue="' '" key="false" length="20" name="MODLIP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+    <metadata connector="FLOW" label="vehicle_master" name="tDBOutput_1">
+      <column comment="" key="false" length="200" name="vinnox" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="namexx" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="VIN_I7" nullable="false" originalDbColumnName="VIN#I7" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="0" key="false" length="4" name="MDLYIP" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="100" name="OMDLI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="30" name="DESCIP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="SER_I7" nullable="false" originalDbColumnName="SER#I7" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT1IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="MODLI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT2IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" defaultValue="0" key="false" length="100" name="MDLYI7" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT3IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="MDYSI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT4IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="ENG_2" nullable="false" originalDbColumnName="ENG#2" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT5IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="COLRI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <additionalProperties key="SYSTEM_TABLE_NAME" value="MODEL01"/>
-      <additionalProperties key="TABLE_SCHEMA" value="MDMPOC"/>
-      <additionalProperties key="SYSTEM_TABLE_SCHEMA" value="MDMPOC"/>
+      <column comment="" key="false" length="100" name="XPRFI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="100" name="WRYYI7" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="100" name="WRMMI7" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="100" name="WRDDI7" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
     </metadata>
-    <metadata connector="REJECT" label="MODEL01" name="REJECT">
-      <column comment="" defaultValue="' '" key="false" length="20" name="MODLIP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+    <metadata connector="REJECT" label="vehicle_master" name="REJECT">
+      <column comment="" key="false" length="200" name="vinnox" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="namexx" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="VIN_I7" nullable="false" originalDbColumnName="VIN#I7" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="0" key="false" length="4" name="MDLYIP" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="100" name="OMDLI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="30" name="DESCIP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="SER_I7" nullable="false" originalDbColumnName="SER#I7" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT1IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="MODLI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT2IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" defaultValue="0" key="false" length="100" name="MDLYI7" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT3IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="MDYSI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT4IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="ENG_2" nullable="false" originalDbColumnName="ENG#2" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="' '" key="false" length="3" name="CAT5IP" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="COLRI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="XPRFI7" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="100" name="WRYYI7" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="100" name="WRMMI7" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="0" key="false" length="100" name="WRDDI7" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <additionalProperties key="SYSTEM_TABLE_NAME" value="MODEL01"/>
-      <additionalProperties key="TABLE_SCHEMA" value="MDMPOC"/>
-      <additionalProperties key="SYSTEM_TABLE_SCHEMA" value="MDMPOC"/>
+      <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="namexx"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="vinnox"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tFileOutputExcel_1">
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
-  </connection>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileOutputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputExcel_1" target="tDBOutput_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d0552169-82da-4490-926d-68ca2d8f6485"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Z3+0Z6ZToOqCkU5ucV0cH+dd4O7vHO2WyCvKNfGM8EOYbUxr2SOV6tJin8fuELfi6tyxl6PKJpsb&#13;
-7ZcCE80C4Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5e32ab42-c190-41e7-b8e7-0896bd9ce544"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EnqoL9zahD53eKprSOOP3VfKQDAWgNkJQK/y7w+SWRJgL+IvhPKYTX6LXtFX0JwhTPf/syZujJYy&#13;
-fbuMW6bRbg==</DigestValue></Reference></SignedInfo><SignatureValue>lgaf1PLdvW0AL3uqEMzXWAqyfgESkZ2sWRe7o59MpUpA3T3KqfoxkKdI4s035S9VpWyu4SBJpNqP&#13;
-PX9fLFguIsS+VpUZE2Cfm+0NwuPWTsmDK3MMNVzQ+HmzX5X7+E1YyxjTo5hvQiRtQFnG5oUMz6F5&#13;
-k078PbFUGDu6fikEHfi/f4Y0moWTwbh7UEm0Db8NgEHZpmK2KBB9gKfhRgPpCniF4jdsaM8nzC8+&#13;
-muO4PaT7DErexgtM5DZkP+dz01M+6ErlaZjymusEDnXul1W4s81vA/MeCitT3j4mp/3giWT3tiFg&#13;
-06Iy4gFy05PmqXiaBvMNOhBPpM9W/FJvViKM3Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_015af704-5210-4f9e-9acb-cdde7183fab4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nAudRab5VKKEW9dtM4bMbQixPL0ETBSADL2ervNgrMMa8GO3Buh7tC0R/xX6SGJBxFhKN9AmOwep&#13;
+Z0qKWUb1mQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e21f1577-1559-4184-8709-27ec8460a108"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>H/V4b2rdwHSOb6KPRswH5JKYqAKAE0OqA6/2NNXVnPJPYsxokXi0rfjwl3OEy3r5xXalLuhk9hCl&#13;
++X5QE/8HXQ==</DigestValue></Reference></SignedInfo><SignatureValue>XY+/oUAjO+5cSyU0veSAR1Na2C1+vd/1jxPY7uePBp0hplw2XiV8ya0T4F/4avSDQ209eUeQoM/Y&#13;
+8DXfTWdRoHc3W/Xww7f3JL+qAbhtjz4MoGMnD71TRbuv2uzSDBk7zVQi/8a1G3bxwR3vLDlO38EJ&#13;
+isk6JXDUCg2SfiI4KtWMHl4r3/c8Tm2RPUOVpYj0PHdaYQvuRILHlRYz6TcOcj6prXtxfqQln6bY&#13;
+2gIAxl9t8CEfQe5ot3EBJZH02yGWu5cAYqCYIrp+SlaiWAvrHUu+8rfRsQY1kuDn/AMeiu6jTkZL&#13;
+BSvfqbKt31D4J6BazMWY2Be68LUmVAxxTknkbA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -524,4 +549,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5e32ab42-c190-41e7-b8e7-0896bd9ce544" Target="#_d0552169-82da-4490-926d-68ca2d8f6485"><Timestamp>2022-11-03 09:47:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e21f1577-1559-4184-8709-27ec8460a108" Target="#_015af704-5210-4f9e-9acb-cdde7183fab4"><Timestamp>2022-11-03 03:43:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

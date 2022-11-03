@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_m8EMgE1hEe2-wa751-W5ZQ" label="Hino_POC" language="java" technicalLabel="HINO_POC" author="_m8EMgU1hEe2-wa751-W5ZQ" productVersion="Talend Cloud Data Fabric-8.0.1.20220923_1236-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/MarvinTeh/Hino_Talend.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3" bigData="false">
+  <TalendProperties:Project xmi:id="_m8EMgE1hEe2-wa751-W5ZQ" label="Hino_POC" description="" language="java" technicalLabel="HINO_POC" author="_m8EMgU1hEe2-wa751-W5ZQ" productVersion="Talend Cloud Data Fabric-8.0.1.20220923_1236-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/MarvinTeh/Hino_Talend.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3" bigData="false">
+    <componentsSettings xmi:id="_-d8fUFjOEe28Dq7iDka6Cw" name="DI|tHashInput" family="Technical"/>
+    <componentsSettings xmi:id="_-d8fUVjOEe28Dq7iDka6Cw" name="DI|tHashOutput" family="Technical"/>
     <migrationTask xmi:id="_m-oYUE1hEe2-wa751-W5ZQ" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_m8EMgU1hEe2-wa751-W5ZQ" login="marvin.teh@nfr.quandatics.com" firstName="Hsien Her" lastName="Teh" type="DQ"/>
